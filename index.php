@@ -1,6 +1,14 @@
 <?php
     require_once __DIR__.'/class.php';
+    $movies = [];
 
+    $matrix = new Movie("Matrix", "Wachowski brothers", "Warner Bros", "Keanu Reeves");
+    $cowboybebop = new Movie("Cowboy Bebop", "Shin'ichirō Watanabe", "Sunrise", "Spike");
+
+    $movies[] = $matrix;
+    $movies[] = $cowboybebop;
+
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
