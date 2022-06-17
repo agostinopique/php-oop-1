@@ -8,7 +8,7 @@
     $movies[] = $matrix;
     $movies[] = $cowboybebop;
 
-    
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +19,15 @@
     <title>OOP</title>
 </head>
 <body>
-   
+    
+    <?php foreach($movies as $movie): ?>    
+        <h2><?php echo $movie->getName() ?></h2>
+        <ul>
+            <?php foreach($movie->getAllInfo() as $key => $value): ?>
+                <li><?php echo "$key : $value"?></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endforeach; ?>
+    
 </body>
 </html>
