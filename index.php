@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__.'/class.php';
+    require_once __DIR__.'/Movie.php';
     $movies = [];
 
     $matrix = new Movie("Matrix", "Wachowski brothers", "Warner Bros", "Keanu Reeves");
@@ -8,7 +8,9 @@
     $movies[] = $matrix;
     $movies[] = $cowboybebop;
 
-   
+    $matrix->setName("Alice");
+    $matrix-> setDirector("Wachowski sisters");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

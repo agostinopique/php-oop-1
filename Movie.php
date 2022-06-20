@@ -11,7 +11,29 @@ class Movie {
         $this->producer = $_producer;
         $this->main_actor = $_mainActor;
     }
+    
 
+    // SETTER
+    public function setName($_new_name){
+        $this->name = $_new_name;
+    }
+    public function setDirector($_new_director){
+        $this->director = $_new_director;
+    }
+    public function setProducer($_new_producer){
+        $this->producer = $_new_producer;
+    }
+    public function setActor($_new_mainActor){
+        $this->main_actor = $_new_mainActor;
+    }
+    // /SETTER
+
+    // GETTER
+    public function getName(){
+        return $this->name;
+    }
+    
+    
     public function getAllInfo(){
         $infoArr = [];
         $infoArr["Direttore"] = $this->director;
@@ -19,11 +41,7 @@ class Movie {
         $infoArr["Attore Principale"] = $this->main_actor;
         return $infoArr;
     }
-
-    public function getName(){
-        return $this->name;
-    }
-    
+    // /GETTER
 
 }
 
